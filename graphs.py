@@ -1,18 +1,7 @@
-from numpy import arange
-from numpy import pi
-from numpy import sin
-from numpy import cos
 
-def plotPerformanceGraph(plt, xGWO, yGWO, xPSO, yPSO, xGA, yGA):
+def plotPerformanceGraph(plt, xRef, yRef, xGWO, yGWO, xPSO, yPSO, xGA, yGA):
     plt.subplot(2, 2, 1)
-    t = arange(-pi/2, pi/2, 0.01)
-    r = 100
-    x = r*sin(t)+100
-    y = r*cos(t)
-    xn = [0, 200]
-    yn = [0,0]
-    plt.plot(x, y, color='black', label='reference')
-    plt.plot(xn, yn, color='black')
+    plt.plot(xRef, yRef, color='black', label='reference')
     plt.plot(xGWO, yGWO, color='red', label='GWO')
     plt.plot(xPSO, yPSO, color='blue', label='PSO')
     plt.plot(xGA, yGA, color='green', label='GA')
