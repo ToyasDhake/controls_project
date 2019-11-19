@@ -21,6 +21,7 @@ def fitness(individual, data):
             weight += item[0]
             volume += item[1]
             price += item[2]
+            print(item[0], item[1], item[2])
     if weight > 12210 or volume > 12:
         price = 0
     # print(price)
