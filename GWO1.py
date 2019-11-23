@@ -117,6 +117,9 @@ def GWO(objf, lb, ub, dim, SearchAgents_no, Max_iter):
     s.optimizer = "GWO"
     s.objfname = objf.__name__
 
-    return s
+    return  Convergence_curve, Alpha_pos
 
-print(GWO(test.testgwo,-4, 4, 3, 10, 100).alpha)
+def runGWO(itr):
+    return  GWO(test.testgwo,-40, 40, 3, 10, itr)
+
+# runGWO(50)

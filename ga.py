@@ -6,7 +6,8 @@ def cal_pop_fitness(equation_inputs, pop):
     # fitness = numpy.sum(pop*equation_inputs, axis=1)
     fitness = []
     for i in pop:
-        fitness.append(test.testga(i[0], i[1], i[2]))
+        fitness.append(test.testga(i))
+        # print(i, fitness)
     return fitness
 
 def select_mating_pool(pop, fitness, num_parents):
