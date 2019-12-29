@@ -5,13 +5,17 @@ This project aim to test performace of different machine learning algorthims to
 set the value to Kp, Ki, Kd, Q and R values of a hybrid LQR-PID controller
 
 ## Results
-
-## Code flow
+![](result.png)
 
 ## Dependencies
+- pymunk
+- matplotlib
+- numpy
+- solution
+- pyswarms
 
 ## Demo
-
+Run demo.py
 ## Copyright
 
 Copyright (C) 2019 Toyas Dhake, Raghav Agrawal.
@@ -26,3 +30,5 @@ For license information, see [LICENSE.txt](LICENSE.txt).
 and Jetson Boards.
 
 2. Raghav Agarwal
+- Robotics engineer, University of Maryland College Park.
+- Mechanical engineer, University of Maryland College Park.
